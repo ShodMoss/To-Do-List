@@ -3,6 +3,7 @@
     <head>
         <title>ToDo List</title>
         <link rel = "stylesheet" href = "styles.css"/>
+        <script defer src="script.js"></script>
     </head>
 
     <body>
@@ -10,17 +11,18 @@
 
         <div class="all-tasks">
             <h2 class="task-list-title">My lists</h2>
-             <ul class="task-list">
-                <li class="list-name
+             <ul class="task-list" data-lists>
+               <!-- <li class="list-name
                 active-list">List 1</li>
                 <li class = "list-name">List 2</li>
-                <li class = "list-name">List 3</li>  
+                <li class = "list-name">List 3</li>  -->
              </ul>
 
-        <form action=""> 
+        <form action="" data-new-list-form> 
             <input
                 type="text"
                 class="new list"
+                data-new-list-input
                 placeholder="new list name"
                 aria-label="new list name"
             />
